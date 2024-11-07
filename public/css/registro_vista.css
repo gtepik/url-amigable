@@ -1,0 +1,26 @@
+body {
+    background-color: #282c34;
+    /* Color de fondo oscuro */
+    font-family: 'Arial', sans-serif;
+    /* Fuente moderna */
+    color: #f8f9fa;
+    /* Color del texto */
+}
+/* Estilos para hacer el formulario semitransparente */
+form {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Fondo blanco con 80% de opacidad */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    /* Sombra suave para efecto flotante */
+}
+.form-container {
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-container:focus-within {
+    border-color: #00ff00; /* Color verde para el borde iluminado */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Efecto de sombra brillante */
+}

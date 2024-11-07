@@ -1,0 +1,227 @@
+/* Estilo general del cuerpo */
+body {
+    background-color: #282c34;
+    /* Color de fondo oscuro */
+    font-family: 'Arial', sans-serif;
+    /* Fuente moderna */
+    color: #f8f9fa;
+    /* Color del texto */
+}
+
+.col-5 {
+    display: flex;
+    /* Habilita el uso de flexbox en la columna */
+    justify-content: flex-end;
+    /* Alinea el contenido al lado derecho */
+}
+
+form {
+    width: 100%;
+    /* Asegura que el formulario ocupe todo el ancho disponible */
+    max-width: 350px;
+    /* Limita el ancho máximo del formulario */
+}
+
+/* Estilo para los contenedores de datos */
+.c-datos {
+    border-radius: 10px;
+    background-color: #343a40;
+    /* Fondo gris oscuro para el contenedor de datos */
+    padding: 20px;
+    /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.4),
+            0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6),
+            0 0 40px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.4),
+            0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+}
+
+form {
+    border: 2px solid #fff;
+    /* Borde inicial blanco */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Espaciado */
+    animation: glow 3s infinite alternate;
+    /* Animación de resplandor */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Estilo para los párrafos */
+.text-center {
+    font-size: 1.5rem;
+    /* Tamaño de texto más grande */
+}
+
+/* Estilo para el botón de cerrar sesión */
+#btn-cerrrar {
+    position: absolute;
+    left: 78%;
+    top: 70%;
+    background-color: #dc3545;
+    /* Color rojo para el botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    color: #fff;
+    /* Color del texto del botón */
+    font-weight: bold;
+    /* Negrita */
+    transition: background-color 0.3s;
+
+
+    /* Transición para el color de fondo */
+}
+
+#btn-cerrrar:hover {
+    background-color: #c82333;
+    /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo para el formulario */
+form {
+    border-radius: 10px;
+    background-color: #495057;
+    /* Fondo gris para el formulario */
+    padding: 20px;
+    /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+}
+
+/* Estilo para los inputs */
+.form-control {
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 10px;
+    /* Espaciado interno */
+    margin-bottom: 15px;
+    /* Espaciado entre inputs */
+    border: none;
+    /* Sin borde */
+    background-color: #e9ecef;
+    /* Fondo claro para los inputs */
+    color: #212529;
+    /* Color del texto */
+}
+
+.form-control:focus {
+    background-color: #fff;
+    /* Fondo blanco al enfocar */
+    outline: none;
+    /* Sin contorno */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Sombra al enfocar */
+}
+
+/* Estilo para el botón de registrar producto */
+.registrar_producto {
+    background-color: #28a745;
+    /* Color verde para el botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    color: #fff;
+    /* Color del texto */
+    font-size: 1.2rem;
+    /* Tamaño de texto más grande */
+    transition: background-color 0.3s;
+    /* Transición para el color de fondo */
+}
+
+.registrar_producto:hover {
+    background-color: #218838;
+    /* Color más oscuro al pasar el mouse */
+}
+
+.table {
+    border: 2px solid #fff;
+    /* Aplica un borde blanco alrededor de la tabla */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    /* Efecto de iluminación suave */
+    border-radius: 10px;
+    /* Opcional: Bordes redondeados para un diseño más suave */
+    transition: box-shadow 0.3s ease;
+    /* Transición suave cuando se aplique el efecto */
+}
+
+.table:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+    /* Aumenta la iluminación al pasar el cursor */
+}
+
+/* Estilo para la tabla */
+.table {
+    background-color: #343a40;
+    /* Fondo gris oscuro para la tabla */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    overflow: hidden;
+    /* Evitar bordes salientes */
+}
+
+.table th,
+.table td {
+    color: #f8f9fa;
+    /* Color del texto de la tabla */
+}
+
+.table th {
+    background-color: #495057;
+    /* Fondo gris para los encabezados */
+}
+
+/* Estilo para las filas de la tabla */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #495057;
+    /* Color gris para las filas impares */
+}
+
+@keyframes dynamic-glow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.4),
+            0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6),
+            0 0 40px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.4),
+            0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+.table {
+    border: 2px solid #fff;
+    /* Borde inicial blanco */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    animation: dynamic-glow 2s infinite alternate;
+    /* Animación continua */
+    transition: box-shadow 0.3s ease;
+}
